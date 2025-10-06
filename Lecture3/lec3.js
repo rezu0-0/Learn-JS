@@ -16,7 +16,15 @@ Topic - Loops and Strings
                                        code block
                                        } while (condition);
                                     Runs the code block at least once (even if condition is false).
-                                    After first run, checks condition → repeats if true.                                      
+                                    After first run, checks condition → repeats if true.
+                    4) for-of Loop - for(let val of strVar) {
+                                 do some work
+                                 }                                                     
+                              → helps to add loops in Arrays & Strings  
+                    5) for-in Loop - fro(let key in objVar) {
+                                do some work  
+                                 }  
+                              → helps to add loops in Object & Arrays          
 ----------------------------------------------------------------------------------------------------------------- */
 
 // ---------------- Examples of Loops ---------------- //
@@ -39,4 +47,23 @@ do {
     console.log("Do-while loop:", k);
     k++;
 } while (k <= 5);
+
+// 4) for-of Loop 
+let str = "JavaScript";
+for(let val of str) {    // we can use i insted of val
+    console.log ("val=",val);
+} 
+
+// 5) for-in Loop 
+let student = {
+    name:"Rezu",
+    age: 69, 
+    cgpa: 6.9,
+    isPass:true, 
+}
+for (let i in student) {
+    console.log(i)          //i - key 
+}   /* → console.log("i=",i, "value=",student[i]) it will print 
+key with var's inside them */
+
 //----------------------------------------------------------//
